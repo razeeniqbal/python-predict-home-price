@@ -29,29 +29,34 @@ Libraries Used:
 
 Process and Methodology:
 
+1. Data Collection:
+- Gather a dataset containing home prices and load the dataset into a pandas DataFrame for analysis.
 
-1. Data Preprocessing
+You can refer the orginal data here [(see excel)](https://github.com/razeeniqbal/python-predict-home-price/blob/main/home_dataset.csv). 
+
+2. Data Preprocessing
 - Exploratory Data Analysis (EDA):
   - Create scatter plots and correlation matrices to identify relationships between features and the target variable (home prices).
 - Feature Engineering:
   - Create new features or transform existing ones to better capture the relationships in the data.
 
-2. Train-Test Split:
+3. Train-Test Split:
 - Split the dataset into training and testing sets using the train_test_split function from scikit-learn.
 
-3.Model Building and Training:
-
+4.Model Building and Training:
 - Reshape the Data:
   - Prepare the data for the linear regression model by reshaping it using NumPy.
 - Create and Train the Model:
   - Use LinearRegression from scikit-learn to create and train the model.
  
-4. Predicting:
+5. Predicting:
 - Use the trained model to make predictions on the test set.
 
-5. Model Evaluation:
+6. Model Evaluation:
 - Visualization:
   - Create scatter plots of actual vs. predicted prices to visually assess the model’s performance.
+ 
+You can refer the full codes here [(see notebook)](https://github.com/razeeniqbal/python-predict-home-price/blob/main/Predict%20Home%20Prices%20with%20Python%20and%20Linear%20Regression.ipynb). 
 
 ![plot](https://github.com/razeeniqbal/python-predict-home-price/blob/main/Plot.png)
 
@@ -68,11 +73,3 @@ End Result:
 
 Conclusion:
 The project successfully built a linear regression model in Python to predict home prices. Through data preprocessing, model training, and evaluation, the model demonstrates its effectiveness in estimating home prices. This tool provides valuable insights for real estate professionals and buyers, showcasing the importance of accurate predictive modeling in decision-making processes.
-
-*Before*
-
-![plot](https://github.com/razeeniqbal/python-london-bike/blob/main/london_merged.png)
-
-*After*
-
-![plot](https://github.com/razeeniqbal/python-london-bike/blob/main/london_bikes_final.png)
