@@ -1,67 +1,73 @@
-# Data Cleaning using Python for Analysis
+# Predict Home Prices with Python and Linear Regression
 
 *Scope of the Project*
 
-The project aims to clean and prepare data for analysis using Python. The primary objective is to improve the quality of the dataset by rectifying errors, inconsistencies, and inaccuracies, thereby ensuring that the data is suitable for accurate and meaningful analysis. 
+
+The project aims to predict home prices using Python and linear regression. The primary objective is to build a predictive model that accurately estimates the price of homes based on various features. This involves collecting relevant data, preprocessing it, developing the linear regression model, and evaluating its performance. 
 
 Key tasks include:
-- Identifying and correcting errors and inconsistencies in the dataset.
-- Removing duplicate entries.
-- Handling missing values.
-- Standardizing data formats.
-- Ensuring overall data integrity and accuracy.
+
+- Building and training a linear regression model to predict home prices.
+- Evaluating the model’s performance and making necessary improvements.
+
 
 *Software Used / Process / Methodology*
 
+
 Software Used:
+
 - Python
 
+  
 Libraries Used:
-- pandas: For data manipulation and cleaning.
-- zipfile: For handling zipped data files.
-- kaggle: For accessing and downloading datasets from Kaggle.
+
+- pandas: For data manipulation and analysis.
+- numpy: For numerical operations.
+- scikit-learn: For machine learning, specifically for building and evaluating the linear regression model.
+- matplotlib: For data visualization.
 
 
-*Process and Methodology:*
+Process and Methodology:
 
 
-1. Initial Data Review:
-- Load the dataset into a pandas DataFrame.
-- Perform an initial review to identify obvious errors and inconsistencies.
+1. Data Preprocessing
+- Exploratory Data Analysis (EDA):
+  - Create scatter plots and correlation matrices to identify relationships between features and the target variable (home prices).
+- Feature Engineering:
+  - Create new features or transform existing ones to better capture the relationships in the data.
 
+2. Train-Test Split:
+- Split the dataset into training and testing sets using the train_test_split function from scikit-learn.
 
-2. Data Cleaning Steps:
-- Loading Data:
-  - Use zipfile to extract data from compressed files if necessary.
-  - Utilize the kaggle library to download datasets directly from Kaggle.
-- Inspecting Data:
-  - Use functions like df.head(), df.info(), and df.describe() to understand the structure and summary statistics of the data.
-- Removing Duplicates:
-  - Use df.drop_duplicates() to eliminate redundant records.
-- Data Type Conversion:
-  - Convert data types as necessary using astype() to ensure consistency.
-- Data Standardization:
-  - Standardize data formats (e.g., dates, strings) using pandas functions like pd.to_datetime() and string manipulation methods.
-- Data Validation:
-  - Implement validation checks to ensure data consistency and integrity using custom functions or conditions.
+3.Model Building and Training:
 
+- Reshape the Data:
+  - Prepare the data for the linear regression model by reshaping it using NumPy.
+- Create and Train the Model:
+  - Use LinearRegression from scikit-learn to create and train the model.
+ 
+4. Predicting:
+- Use the trained model to make predictions on the test set.
 
-3. Documentation:
-- Keep detailed records of all steps and transformations applied during the data cleaning process.
-- Document any assumptions or decisions made while handling data inconsistencies or missing values.
+5. Model Evaluation:
+- Visualization:
+  - Create scatter plots of actual vs. predicted prices to visually assess the model’s performance.
 
-You can refer the full codes here [(see notebook)](https://github.com/razeeniqbal/python-london-bike/blob/main/london_bikes_code.ipynb). 
+![plot](https://github.com/razeeniqbal/python-predict-home-price/blob/main/Plot.png)
+
+![plot](https://github.com/razeeniqbal/python-predict-home-price/blob/main/Plot%20with%20Predict.png)
+
 
 *End Result / Conclusion*
 
 End Result:
 
-- A cleaned, structured, and well-organized dataset free from errors, duplicates, and inconsistencies.
-- Enhanced data quality that facilitates accurate and reliable analysis.
-- A dataset that adheres to standardized formats and validation rules, ensuring better data integrity.
+- A linear regression model capable of predicting home prices based on various features.
+- An evaluation of the model’s performance, demonstrating its accuracy and reliability in predicting home prices.
+- Visualizations and performance metrics that provide insights into the model’s strengths and limitations.
 
 Conclusion:
-The data cleaning process using Python and its powerful libraries, such as pandas, significantly improved the quality of the dataset. By systematically addressing errors, inconsistencies, and missing values, the dataset was transformed from a raw state to a refined state, ready for in-depth analysis. This project highlights the critical role of data cleaning in the data analysis workflow, ensuring that subsequent analyses and insights are based on accurate and trustworthy data.
+The project successfully built a linear regression model in Python to predict home prices. Through data preprocessing, model training, and evaluation, the model demonstrates its effectiveness in estimating home prices. This tool provides valuable insights for real estate professionals and buyers, showcasing the importance of accurate predictive modeling in decision-making processes.
 
 *Before*
 
